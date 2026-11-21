@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">☀</div>
+            <h1>Weatherly</h1>
+            <p>Your personal weather dashboard</p>
+        </header>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">Search</button>
+
+            <button id="locationBtn" title="Use my location">📍</button>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <section id="weatherCard" class="weather-card hidden">
+
+            <div class="location-info">
+                <h2 id="cityName">Jaipur</h2>
+                <p id="countryName">India</p>
+                <p id="localTime">Local Time</p>
+            </div>
+
+            <div class="temperature-section">
+                <img id="weatherIcon" src="" alt="Weather">
+                <h2><span id="temperature">--</span>°C</h2>
+                <p id="condition">Weather Condition</p>
+            </div>
+
+            <div class="details-grid">
+
+                <div class="detail-card">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">--°C</h3>
+                </div>
+
+                <div class="detail-card">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail-card">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail-card">
+                    <span>☀️</span>
+                    <p>UV Index</p>
+                    <h3 id="uv">--</h3>
+                </div>
+
+            </div>
+
+            <p class="updated">
+                Last Updated: <span id="lastUpdated">--</span>
+            </p>
+
+        </section>
+
+        <footer>
+            Weatherly © 2026 | Powered by WeatherAPI
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

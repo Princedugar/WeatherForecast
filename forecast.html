@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly | Forecast</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">☀ Weatherly</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="forecast.html">Forecast</a>
+        <a href="about.html">About</a>
+    </div>
+</nav>
+
+<main class="container page-container">
+    <section class="page-heading">
+        <span class="eyebrow">PLAN AHEAD</span>
+        <h1>Weather <span>Forecast</span></h1>
+        <p>Explore upcoming weather conditions for your city.</p>
+    </section>
+
+    <div class="search-box">
+        <input id="cityInput" placeholder="Enter city name..." value="Jaipur">
+        <button id="searchBtn">Search →</button>
+        <button id="locationBtn" class="gps-btn" title="Use current location">📍</button>
+    </div>
+    <p id="message" class="message"></p>
+
+    <section id="forecastSection" class="hidden">
+        <h2 class="section-title" id="forecastCity">7-Day Forecast</h2>
+        <div id="forecastGrid" class="forecast-grid"></div>
+
+        <h2 class="section-title">Hourly Forecast – Today</h2>
+        <div id="hourlyGrid" class="hourly-grid"></div>
+    </section>
+</main>
+
+<footer>Weatherly © 2026 · Powered by WeatherAPI.com</footer>
+<script src="script.js?v=3"></script>
+</body>
+</html>
